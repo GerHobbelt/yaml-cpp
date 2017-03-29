@@ -24,7 +24,7 @@ include(CheckCXXCompilerFlag)
 ###
 ### Project settings
 ###
-project(YAML_CPP)
+project(yaml-cpp)
 
 set(YAML_CPP_VERSION_MAJOR "0")
 set(YAML_CPP_VERSION_MINOR "5")
@@ -45,7 +45,7 @@ option(YAML_CPP_BUILD_CONTRIB "Enable contrib stuff in library" ON)
 # --> General
 # see http://www.cmake.org/cmake/help/cmake2.6docs.html#variable:BUILD_SHARED_LIBS
 #     http://www.cmake.org/cmake/help/cmake2.6docs.html#command:add_library
-option(BUILD_SHARED_LIBS "Build Shared Libraries" OFF)
+option(BUILD_SHARED_LIBS "Build Shared Libraries" ON)
 
 # --> Apple
 option(APPLE_UNIVERSAL_BIN "Apple: Build universal binary" OFF)
@@ -115,9 +115,11 @@ if(VERBOSE)
 	message(STATUS "contrib_private_headers: ${contrib_private_headers}")
 endif()
 
-include_directories(${YAML_CPP_SOURCE_DIR}/src)
-include_directories(${YAML_CPP_SOURCE_DIR}/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+find_package(Boost REQUIRED)
+include_directories(${Boost_INCLUDE_DIRS})
 
 
 ###
