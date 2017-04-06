@@ -13,7 +13,7 @@
 namespace YAML {
 namespace detail {
 
-std::string node_data::empty_scalar;
+//std::string node_data::empty_scalar;
 
 node_data::node_data()
     : m_isDefined(false),

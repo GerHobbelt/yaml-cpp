@@ -81,7 +81,9 @@ class YAML_CPP_API node_data {
                     shared_memory_holder pMemory);
 
  public:
-  static std::string empty_scalar;
+  //Overcome an issue if compiling yaml-dll as shared lib, similar to that described in http://stackoverflow.com/questions/2479784/exporting-static-data-in-a-dll
+  //static std::string empty_scalar;
+  std::string empty_scalar;
 
  private:
   void compute_seq_size() const;

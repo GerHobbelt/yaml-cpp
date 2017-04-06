@@ -114,6 +114,7 @@ class YAML_CPP_API Node {
   void force_insert(const Key& key, const Value& value);
 
  private:
+  std::string empty_scalar;
   enum Zombie { ZombieNode };
   explicit Node(Zombie);
   explicit Node(detail::node& node, detail::shared_memory_holder pMemory);
