@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="us-ascii"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -33,15 +33,15 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)/Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)/Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />      
+    <Import Project="$(UserRootDir)/Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)/Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(UserProfile)/vcpp_config.props" Condition="exists('$(UserProfile)/vcpp_config.props')" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <IntDir >yaml-cpp.dir\$(Configuration)/$(Platform)</IntDir>
-      <TargetName >yaml-cpp</TargetName>
-      <TargetExt >.dll</TargetExt>
-    </PropertyGroup>
+  <PropertyGroup>
+    <IntDir>yaml-cpp.dir\$(Configuration)/$(Platform)</IntDir>
+    <TargetName>yaml-cpp</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>../src;../include;$(LocalIncludePaths);$(IncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -85,7 +85,8 @@
       <ImportLibrary>$(OutDir)/yaml-cpp.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)/yaml-cpp.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -153,7 +154,6 @@
     <ClInclude Include="../src/token.h" />
     <ClInclude Include="../src/contrib/graphbuilderadapter.h" />
   </ItemGroup>
-    
   <ItemGroup>
     <ClCompile Include="../src/binary.cpp" />
     <ClCompile Include="../src/convert.cpp" />
@@ -183,8 +183,8 @@
     <ClCompile Include="../src/singledocparser.cpp" />
     <ClCompile Include="../src/stream.cpp" />
     <ClCompile Include="../src/tag.cpp" />
-    <ClCompile Include="../src/contrib/graphbuilder.cpp" />    
-    <ClCompile Include="../src/contrib/graphbuilderadapter.cpp"  />
+    <ClCompile Include="../src/contrib/graphbuilder.cpp" />
+    <ClCompile Include="../src/contrib/graphbuilderadapter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

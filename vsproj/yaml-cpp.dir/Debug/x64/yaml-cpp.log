@@ -1,0 +1,359 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(363,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+  graphbuilderadapter.cpp
+  graphbuilder.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/parser.h(81): warning C4251: 'YAML::Parser::m_pScanner' : class 'std::unique_ptr<YAML::Scanner,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Parser'
+          with
+          [
+              _Ty=YAML::Scanner
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/parser.h(82): warning C4251: 'YAML::Parser::m_pDirectives' : class 'std::unique_ptr<YAML::Directives,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Parser'
+          with
+          [
+              _Ty=YAML::Directives
+          ]
+  tag.cpp
+  stream.cpp
+  singledocparser.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  simplekey.cpp
+  scantoken.cpp
+c:\src\github_jm\yaml-cpp\src\regex_yaml.h(81): warning C4251: 'YAML::RegEx::m_params' : class 'std::vector<YAML::RegEx,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::RegEx'
+          with
+          [
+              _Ty=YAML::RegEx
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  scantag.cpp
+c:\src\github_jm\yaml-cpp\src\regex_yaml.h(81): warning C4251: 'YAML::RegEx::m_params' : class 'std::vector<YAML::RegEx,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::RegEx'
+          with
+          [
+              _Ty=YAML::RegEx
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  scanscalar.cpp
+c:\src\github_jm\yaml-cpp\src\regex_yaml.h(81): warning C4251: 'YAML::RegEx::m_params' : class 'std::vector<YAML::RegEx,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::RegEx'
+          with
+          [
+              _Ty=YAML::RegEx
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  scanner.cpp
+c:\src\github_jm\yaml-cpp\src\regex_yaml.h(81): warning C4251: 'YAML::RegEx::m_params' : class 'std::vector<YAML::RegEx,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::RegEx'
+          with
+          [
+              _Ty=YAML::RegEx
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  regex_yaml.cpp
+c:\src\github_jm\yaml-cpp\src\regex_yaml.h(81): warning C4251: 'YAML::RegEx::m_params' : class 'std::vector<YAML::RegEx,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::RegEx'
+          with
+          [
+              _Ty=YAML::RegEx
+          ]
+  parser.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/parser.h(81): warning C4251: 'YAML::Parser::m_pScanner' : class 'std::unique_ptr<YAML::Scanner,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Parser'
+          with
+          [
+              _Ty=YAML::Scanner
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/parser.h(82): warning C4251: 'YAML::Parser::m_pDirectives' : class 'std::unique_ptr<YAML::Directives,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Parser'
+          with
+          [
+              _Ty=YAML::Directives
+          ]
+  parse.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(117): warning C4251: 'YAML::Node::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(134): warning C4251: 'YAML::Node::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory_holder>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/memory.h(30): warning C4251: 'YAML::detail::memory::m_nodes' : class 'std::set<YAML::detail::shared_node,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::memory'
+          with
+          [
+              _Kty=YAML::detail::shared_node
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/memory.h(41): warning C4251: 'YAML::detail::memory_holder::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory>' needs to have dll-interface to be used by clients of class 'YAML::detail::memory_holder'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(86): warning C4251: 'YAML::detail::node_data::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(106): warning C4251: 'YAML::detail::node_data::m_tag' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(110): warning C4251: 'YAML::detail::node_data::m_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(114): warning C4251: 'YAML::detail::node_data::m_sequence' : class 'std::vector<YAML::detail::node *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=YAML::detail::node *
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(120): warning C4251: 'YAML::detail::node_data::m_map' : class 'std::vector<std::pair<YAML::detail::node *,YAML::detail::node *>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(124): warning C4251: 'YAML::detail::node_data::m_undefinedPairs' : class 'std::list<YAML::detail::node_data::kv_pair,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/parser.h(81): warning C4251: 'YAML::Parser::m_pScanner' : class 'std::unique_ptr<YAML::Scanner,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Parser'
+          with
+          [
+              _Ty=YAML::Scanner
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/parser.h(82): warning C4251: 'YAML::Parser::m_pDirectives' : class 'std::unique_ptr<YAML::Directives,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Parser'
+          with
+          [
+              _Ty=YAML::Directives
+          ]
+  ostream_wrapper.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/ostream_wrapper.h(45): warning C4251: 'YAML::ostream_wrapper::m_buffer' : class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::ostream_wrapper'
+  null.cpp
+  nodeevents.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(117): warning C4251: 'YAML::Node::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(134): warning C4251: 'YAML::Node::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory_holder>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(86): warning C4251: 'YAML::detail::node_data::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(106): warning C4251: 'YAML::detail::node_data::m_tag' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(110): warning C4251: 'YAML::detail::node_data::m_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(114): warning C4251: 'YAML::detail::node_data::m_sequence' : class 'std::vector<YAML::detail::node *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=YAML::detail::node *
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(120): warning C4251: 'YAML::detail::node_data::m_map' : class 'std::vector<std::pair<YAML::detail::node *,YAML::detail::node *>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(124): warning C4251: 'YAML::detail::node_data::m_undefinedPairs' : class 'std::list<YAML::detail::node_data::kv_pair,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+  nodebuilder.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(117): warning C4251: 'YAML::Node::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(134): warning C4251: 'YAML::Node::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory_holder>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(86): warning C4251: 'YAML::detail::node_data::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(106): warning C4251: 'YAML::detail::node_data::m_tag' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(110): warning C4251: 'YAML::detail::node_data::m_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(114): warning C4251: 'YAML::detail::node_data::m_sequence' : class 'std::vector<YAML::detail::node *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=YAML::detail::node *
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(120): warning C4251: 'YAML::detail::node_data::m_map' : class 'std::vector<std::pair<YAML::detail::node *,YAML::detail::node *>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(124): warning C4251: 'YAML::detail::node_data::m_undefinedPairs' : class 'std::list<YAML::detail::node_data::kv_pair,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/memory.h(30): warning C4251: 'YAML::detail::memory::m_nodes' : class 'std::set<YAML::detail::shared_node,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::memory'
+          with
+          [
+              _Kty=YAML::detail::shared_node
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/memory.h(41): warning C4251: 'YAML::detail::memory_holder::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory>' needs to have dll-interface to be used by clients of class 'YAML::detail::memory_holder'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  node_data.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/memory.h(30): warning C4251: 'YAML::detail::memory::m_nodes' : class 'std::set<YAML::detail::shared_node,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::memory'
+          with
+          [
+              _Kty=YAML::detail::shared_node
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/memory.h(41): warning C4251: 'YAML::detail::memory_holder::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory>' needs to have dll-interface to be used by clients of class 'YAML::detail::memory_holder'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(117): warning C4251: 'YAML::Node::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(134): warning C4251: 'YAML::Node::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory_holder>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(86): warning C4251: 'YAML::detail::node_data::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(106): warning C4251: 'YAML::detail::node_data::m_tag' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(110): warning C4251: 'YAML::detail::node_data::m_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(114): warning C4251: 'YAML::detail::node_data::m_sequence' : class 'std::vector<YAML::detail::node *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=YAML::detail::node *
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(120): warning C4251: 'YAML::detail::node_data::m_map' : class 'std::vector<std::pair<YAML::detail::node *,YAML::detail::node *>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(124): warning C4251: 'YAML::detail::node_data::m_undefinedPairs' : class 'std::list<YAML::detail::node_data::kv_pair,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+  node.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(117): warning C4251: 'YAML::Node::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(134): warning C4251: 'YAML::Node::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory_holder>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+  memory.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/memory.h(30): warning C4251: 'YAML::detail::memory::m_nodes' : class 'std::set<YAML::detail::shared_node,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::memory'
+          with
+          [
+              _Kty=YAML::detail::shared_node
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/memory.h(41): warning C4251: 'YAML::detail::memory_holder::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory>' needs to have dll-interface to be used by clients of class 'YAML::detail::memory_holder'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(117): warning C4251: 'YAML::Node::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(134): warning C4251: 'YAML::Node::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory_holder>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(86): warning C4251: 'YAML::detail::node_data::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(106): warning C4251: 'YAML::detail::node_data::m_tag' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(110): warning C4251: 'YAML::detail::node_data::m_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(114): warning C4251: 'YAML::detail::node_data::m_sequence' : class 'std::vector<YAML::detail::node *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=YAML::detail::node *
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(120): warning C4251: 'YAML::detail::node_data::m_map' : class 'std::vector<std::pair<YAML::detail::node *,YAML::detail::node *>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(124): warning C4251: 'YAML::detail::node_data::m_undefinedPairs' : class 'std::list<YAML::detail::node_data::kv_pair,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+  Generating Code...
+  Compiling...
+  exp.cpp
+c:\src\github_jm\yaml-cpp\src\regex_yaml.h(81): warning C4251: 'YAML::RegEx::m_params' : class 'std::vector<YAML::RegEx,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::RegEx'
+          with
+          [
+              _Ty=YAML::RegEx
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  exceptions.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  emitterutils.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/ostream_wrapper.h(45): warning C4251: 'YAML::ostream_wrapper::m_buffer' : class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::ostream_wrapper'
+c:\src\github_jm\yaml-cpp\src\regex_yaml.h(81): warning C4251: 'YAML::RegEx::m_params' : class 'std::vector<YAML::RegEx,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::RegEx'
+          with
+          [
+              _Ty=YAML::RegEx
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/binary.h(61): warning C4251: 'YAML::Binary::m_data' : class 'std::vector<unsigned char,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Binary'
+          with
+          [
+              _Ty=unsigned char
+          ]
+  emitterstate.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  emitter.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/ostream_wrapper.h(45): warning C4251: 'YAML::ostream_wrapper::m_buffer' : class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::ostream_wrapper'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/binary.h(61): warning C4251: 'YAML::Binary::m_data' : class 'std::vector<unsigned char,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Binary'
+          with
+          [
+              _Ty=unsigned char
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/emitter.h(125): warning C4251: 'YAML::Emitter::m_pState' : class 'std::unique_ptr<YAML::EmitterState,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Emitter'
+          with
+          [
+              _Ty=YAML::EmitterState
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  emitfromevents.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/binary.h(61): warning C4251: 'YAML::Binary::m_data' : class 'std::vector<unsigned char,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Binary'
+          with
+          [
+              _Ty=unsigned char
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/ostream_wrapper.h(45): warning C4251: 'YAML::ostream_wrapper::m_buffer' : class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::ostream_wrapper'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/emitter.h(125): warning C4251: 'YAML::Emitter::m_pState' : class 'std::unique_ptr<YAML::EmitterState,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Emitter'
+          with
+          [
+              _Ty=YAML::EmitterState
+          ]
+  emit.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/binary.h(61): warning C4251: 'YAML::Binary::m_data' : class 'std::vector<unsigned char,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Binary'
+          with
+          [
+              _Ty=unsigned char
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/ostream_wrapper.h(45): warning C4251: 'YAML::ostream_wrapper::m_buffer' : class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::ostream_wrapper'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/emitter.h(125): warning C4251: 'YAML::Emitter::m_pState' : class 'std::unique_ptr<YAML::EmitterState,std::default_delete<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Emitter'
+          with
+          [
+              _Ty=YAML::EmitterState
+          ]
+  directives.cpp
+  convert.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/binary.h(61): warning C4251: 'YAML::Binary::m_data' : class 'std::vector<unsigned char,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Binary'
+          with
+          [
+              _Ty=unsigned char
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(117): warning C4251: 'YAML::Node::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/node.h(134): warning C4251: 'YAML::Node::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory_holder>' needs to have dll-interface to be used by clients of class 'YAML::Node'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/memory.h(30): warning C4251: 'YAML::detail::memory::m_nodes' : class 'std::set<YAML::detail::shared_node,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::memory'
+          with
+          [
+              _Kty=YAML::detail::shared_node
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/memory.h(41): warning C4251: 'YAML::detail::memory_holder::m_pMemory' : class 'std::shared_ptr<YAML::detail::memory>' needs to have dll-interface to be used by clients of class 'YAML::detail::memory_holder'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(86): warning C4251: 'YAML::detail::node_data::empty_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(106): warning C4251: 'YAML::detail::node_data::m_tag' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(110): warning C4251: 'YAML::detail::node_data::m_scalar' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(114): warning C4251: 'YAML::detail::node_data::m_sequence' : class 'std::vector<YAML::detail::node *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=YAML::detail::node *
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(120): warning C4251: 'YAML::detail::node_data::m_map' : class 'std::vector<std::pair<YAML::detail::node *,YAML::detail::node *>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/node/detail/node_data.h(124): warning C4251: 'YAML::detail::node_data::m_undefinedPairs' : class 'std::list<YAML::detail::node_data::kv_pair,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::detail::node_data'
+          with
+          [
+              _Ty=std::pair<YAML::detail::node *,YAML::detail::node *>
+          ]
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'YAML::Exception'
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdexcept(166) : see declaration of 'std::runtime_error'
+          C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(112) : see declaration of 'YAML::Exception'
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/exceptions.h(121): warning C4251: 'YAML::Exception::msg' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'YAML::Exception'
+  binary.cpp
+C:\src\github_jm\yaml-cpp\include\yaml-cpp/binary.h(61): warning C4251: 'YAML::Binary::m_data' : class 'std::vector<unsigned char,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'YAML::Binary'
+          with
+          [
+              _Ty=unsigned char
+          ]
+  Generating Code...
+     Creating library C:\src\github_jm\yaml-cpp\vsproj\/x64/Debug//yaml-cpp.lib and object C:\src\github_jm\yaml-cpp\vsproj\/x64/Debug//yaml-cpp.exp
+  yaml-cpp.vcxproj -> C:\src\github_jm\yaml-cpp\vsproj\/x64/Debug/yaml-cpp.dll
