@@ -1,4 +1,4 @@
-#include "specexamples.h"
+#include "../specexamples.h"
 #include "yaml-cpp/yaml.h"  // IWYU pragma: keep
 
 #include "gtest/gtest.h"
