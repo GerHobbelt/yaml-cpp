@@ -1,5 +1,9 @@
 language: c++
 
+branches:
+  only:
+    - build_is_disabled
+
 matrix:
   include:
     - os: linux
