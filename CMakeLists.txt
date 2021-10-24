@@ -53,15 +53,42 @@ if (NOT DEFINED CMAKE_MSVC_RUNTIME_LIBRARY)
     MultiThreaded$<$<CONFIG:Debug>:Debug>$<${msvc-shared_rt}:DLL>)
 endif()
 
-set(contrib-pattern "src/contrib/*.cpp")
-set(src-pattern "src/*.cpp")
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  list(INSERT contrib-pattern 0 CONFIGURE_DEPENDS)
-  list(INSERT src-pattern 0 CONFIGURE_DEPENDS)
-endif()
-
-file(GLOB yaml-cpp-contrib-sources ${contrib-pattern})
-file(GLOB yaml-cpp-sources ${src-pattern})
+set(SRC_PATH ${CMAKE_CURRENT_SOURCE_DIR}/src)
+set(yaml-cpp-contrib-sources
+	${SRC_PATH}/contrib/graphbuilder.cpp
+	${SRC_PATH}/contrib/graphbuilderadapter.cpp
+)
+set(yaml-cpp-sources
+	${SRC_PATH}/binary.cpp
+	${SRC_PATH}/convert.cpp
+	${SRC_PATH}/depthguard.cpp
+	${SRC_PATH}/directives.cpp
+	${SRC_PATH}/emit.cpp
+	${SRC_PATH}/emitfromevents.cpp
+	${SRC_PATH}/emitter.cpp
+	${SRC_PATH}/emitterstate.cpp
+	${SRC_PATH}/emitterutils.cpp
+	${SRC_PATH}/exceptions.cpp
+	${SRC_PATH}/exp.cpp
+	${SRC_PATH}/memory.cpp
+	${SRC_PATH}/nodebuilder.cpp
+	${SRC_PATH}/node.cpp
+	${SRC_PATH}/node_data.cpp
+	${SRC_PATH}/nodeevents.cpp
+	${SRC_PATH}/null.cpp
+	${SRC_PATH}/ostream_wrapper.cpp
+	${SRC_PATH}/parse.cpp
+	${SRC_PATH}/parser.cpp
+	${SRC_PATH}/regex_yaml.cpp
+	${SRC_PATH}/scanner.cpp
+	${SRC_PATH}/scanscalar.cpp
+	${SRC_PATH}/scantag.cpp
+	${SRC_PATH}/scantoken.cpp
+	${SRC_PATH}/simplekey.cpp
+	${SRC_PATH}/singledocparser.cpp
+	${SRC_PATH}/stream.cpp
+	${SRC_PATH}/tag.cpp
+)
 
 set(msvc-rt $<TARGET_PROPERTY:MSVC_RUNTIME_LIBRARY>)
 
