@@ -25,7 +25,14 @@ class NullEventHandler : public YAML::EventHandler {
   void OnMapEnd() override {}
 };
 
-int main() {
+
+
+#if defined(BUILD_MONOLITHIC)
+#define main(void)      yamlcpp_sandbox_util_main(void)
+#endif
+
+int main(void)
+{
   YAML::Node root;
 
   for (;;) {

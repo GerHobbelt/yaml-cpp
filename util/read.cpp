@@ -40,7 +40,14 @@ std::string read_stream(std::istream& in) {
                      std::istreambuf_iterator<char>());
 }
 
-int main(int argc, char** argv) {
+
+
+#if defined(BUILD_MONOLITHIC)
+#define main(cnt, arr)      yamlcpp_read_util_main(cnt, arr)
+#endif
+
+int main(int argc, const char** argv)
+{
   int N = 1;
   bool cache = false;
   std::string filename;
