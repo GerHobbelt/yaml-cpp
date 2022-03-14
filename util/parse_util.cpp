@@ -33,7 +33,14 @@ void parse(std::istream& input) {
   }
 }
 
-int main(int argc, char** argv) {
+
+
+#if defined(BUILD_MONOLITHIC)
+#define main(cnt, arr)      yamlcpp_parse_util_main(cnt, arr)
+#endif
+
+int main(int argc, const char** argv)
+{
   if (argc > 1) {
     std::ifstream fin;
     fin.open(argv[1]);
