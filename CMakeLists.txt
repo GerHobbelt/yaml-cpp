@@ -137,9 +137,9 @@ target_sources(yaml-cpp
     $<$<BOOL:${YAML_CPP_BUILD_CONTRIB}>:${yaml-cpp-contrib-sources}>
     ${yaml-cpp-sources})
 
-if (NOT DEFINED CMAKE_DEBUG_POSTFIX)
-  set(CMAKE_DEBUG_POSTFIX "d")
-endif()
+# if (NOT DEFINED CMAKE_DEBUG_POSTFIX)
+#   set(CMAKE_DEBUG_POSTFIX "d")
+# endif()
 
 set_target_properties(yaml-cpp PROPERTIES
   VERSION "${PROJECT_VERSION}"
