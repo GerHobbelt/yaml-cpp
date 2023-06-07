@@ -1,3 +1,26 @@
 build/
 /tags
 /bazel-*
+/VS/CMakeFiles/3.26.4/*.bin
+/VS/x64/Debug/ZERO_CHECK/_IsIncrementalBuild
+/VS/yaml-cpp.dir/Debug/_IsIncrementalBuild
+/VS/*.cmake
+/VS/CMakeFiles/3.26.4/*.cmake
+/VS/CMakeFiles/Export/626f869e3950875d38153c438040ad7b/*.cmake
+/VS/CMakeFiles/*.cmake
+/VS/util/*.cmake
+/VS/CMakeFiles/cmake.check_cache
+/VS/CMakeFiles
+/VS/util/CMakeFiles/*.depend
+/VS/Debug/*.exp
+/VS/x64/Debug/ZERO_CHECK/ZERO_CHECK.tlog/*.lastbuildstate
+/VS/yaml-cpp.dir/Debug/yaml-cpp shared.tlog/*.lastbuildstate
+yaml-cpp.pc
+ZERO_CHECK.recipe
+yaml-cppd.dll.recipe
+YAML_CPP.sln
+generate.stamp
+*.tlog
+Debug
+x64
+CMakeCache.txt

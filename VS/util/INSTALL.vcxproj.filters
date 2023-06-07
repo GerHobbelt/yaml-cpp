@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Git\yaml-cpp\VS\CMakeFiles\35c2b3094292312c2653790c362fddb7\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C350CAD3-EC21-374E-8536-21A885FEBC8D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
