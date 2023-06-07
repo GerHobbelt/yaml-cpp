@@ -210,14 +210,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\Git\yaml-cpp\src\stream.cpp" />
     <ClCompile Include="D:\Git\yaml-cpp\src\tag.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="D:\Git\yaml-cpp\VS\ZERO_CHECK.vcxproj">
-      <Project>{9FC26129-1FA6-38B7-8BCD-878401CBA201}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
