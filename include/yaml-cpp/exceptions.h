@@ -150,7 +150,7 @@ inline const std::string INVALID_NODE_WITH_KEY(const std::string& key) {
 }
 }  // namespace ErrorMsg
 
-class YAML_CPP_API Exception : public std::runtime_error {
+class Exception : public std::runtime_error {
  public:
   Exception(const Mark& mark_, const std::string& msg_)
       : std::runtime_error(build_what(mark_, msg_)), mark(mark_), msg(msg_) {}
@@ -175,7 +175,7 @@ class YAML_CPP_API Exception : public std::runtime_error {
   }
 };
 
-class YAML_CPP_API ParserException : public Exception {
+class ParserException : public Exception {
  public:
   ParserException(const Mark& mark_, const std::string& msg_)
       : Exception(mark_, msg_) {}
@@ -183,7 +183,7 @@ class YAML_CPP_API ParserException : public Exception {
   ~ParserException() YAML_CPP_NOEXCEPT override;
 };
 
-class YAML_CPP_API RepresentationException : public Exception {
+class RepresentationException : public Exception {
  public:
   RepresentationException(const Mark& mark_, const std::string& msg_)
       : Exception(mark_, msg_) {}
@@ -282,7 +282,7 @@ class YAML_CPP_API BadInsert : public RepresentationException {
   ~BadInsert() YAML_CPP_NOEXCEPT override;
 };
 
-class YAML_CPP_API EmitterException : public Exception {
+class EmitterException : public Exception {
  public:
   EmitterException(const std::string& msg_)
       : Exception(Mark::null_mark(), msg_) {}
@@ -290,7 +290,7 @@ class YAML_CPP_API EmitterException : public Exception {
   ~EmitterException() YAML_CPP_NOEXCEPT override;
 };
 
-class YAML_CPP_API BadFile : public Exception {
+class BadFile : public Exception {
  public:
   explicit BadFile(const std::string& filename)
       : Exception(Mark::null_mark(),
