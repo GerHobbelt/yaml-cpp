@@ -210,6 +210,75 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\Git\yaml-cpp\src\stream.cpp" />
     <ClCompile Include="D:\Git\yaml-cpp\src\tag.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\yaml-cpp\anchor.h" />
+    <ClInclude Include="..\include\yaml-cpp\binary.h" />
+    <ClInclude Include="..\include\yaml-cpp\contrib\anchordict.h" />
+    <ClInclude Include="..\include\yaml-cpp\contrib\graphbuilder.h" />
+    <ClInclude Include="..\include\yaml-cpp\depthguard.h" />
+    <ClInclude Include="..\include\yaml-cpp\dll.h" />
+    <ClInclude Include="..\include\yaml-cpp\emitfromevents.h" />
+    <ClInclude Include="..\include\yaml-cpp\emitter.h" />
+    <ClInclude Include="..\include\yaml-cpp\emitterdef.h" />
+    <ClInclude Include="..\include\yaml-cpp\emittermanip.h" />
+    <ClInclude Include="..\include\yaml-cpp\emitterstyle.h" />
+    <ClInclude Include="..\include\yaml-cpp\eventhandler.h" />
+    <ClInclude Include="..\include\yaml-cpp\exceptions.h" />
+    <ClInclude Include="..\include\yaml-cpp\mark.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\convert.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\detail\impl.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\detail\iterator.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\detail\iterator_fwd.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\detail\memory.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\detail\node.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\detail\node_data.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\detail\node_iterator.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\detail\node_ref.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\emit.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\impl.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\iterator.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\node.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\parse.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\ptr.h" />
+    <ClInclude Include="..\include\yaml-cpp\node\type.h" />
+    <ClInclude Include="..\include\yaml-cpp\noexcept.h" />
+    <ClInclude Include="..\include\yaml-cpp\null.h" />
+    <ClInclude Include="..\include\yaml-cpp\ostream_wrapper.h" />
+    <ClInclude Include="..\include\yaml-cpp\parser.h" />
+    <ClInclude Include="..\include\yaml-cpp\stlemitter.h" />
+    <ClInclude Include="..\include\yaml-cpp\traits.h" />
+    <ClInclude Include="..\include\yaml-cpp\yaml.h" />
+    <ClInclude Include="..\src\collectionstack.h" />
+    <ClInclude Include="..\src\contrib\graphbuilderadapter.h" />
+    <ClInclude Include="..\src\directives.h" />
+    <ClInclude Include="..\src\emitterstate.h" />
+    <ClInclude Include="..\src\emitterutils.h" />
+    <ClInclude Include="..\src\exp.h" />
+    <ClInclude Include="..\src\indentation.h" />
+    <ClInclude Include="..\src\nodebuilder.h" />
+    <ClInclude Include="..\src\nodeevents.h" />
+    <ClInclude Include="..\src\ptr_vector.h" />
+    <ClInclude Include="..\src\regeximpl.h" />
+    <ClInclude Include="..\src\regex_yaml.h" />
+    <ClInclude Include="..\src\scanner.h" />
+    <ClInclude Include="..\src\scanscalar.h" />
+    <ClInclude Include="..\src\scantag.h" />
+    <ClInclude Include="..\src\setting.h" />
+    <ClInclude Include="..\src\singledocparser.h" />
+    <ClInclude Include="..\src\stream.h" />
+    <ClInclude Include="..\src\streamcharsource.h" />
+    <ClInclude Include="..\src\stringsource.h" />
+    <ClInclude Include="..\src\tag.h" />
+    <ClInclude Include="..\src\token.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\docs\Breaking-Changes.md" />
+    <None Include="..\docs\How-To-Emit-YAML.md" />
+    <None Include="..\docs\How-To-Parse-A-Document-(Old-API).md" />
+    <None Include="..\docs\index.md" />
+    <None Include="..\docs\Strings.md" />
+    <None Include="..\docs\Tutorial.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
