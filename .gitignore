@@ -40,12 +40,8 @@ CMakeFiles
 /test/VS/INSTALL.vcxproj.filters
 /test/VS/prefix/ALL_BUILD.vcxproj.filters
 /test/VS/prefix/googlemock/ALL_BUILD.vcxproj.filters
-/test/VS/prefix/googlemock/gmock.vcxproj.filters
-/test/VS/prefix/googlemock/gmock_main.vcxproj.filters
 /test/VS/prefix/googlemock/INSTALL.vcxproj.filters
 /test/VS/prefix/googletest/ALL_BUILD.vcxproj.filters
-/test/VS/prefix/googletest/gtest.vcxproj.filters
-/test/VS/prefix/googletest/gtest_main.vcxproj.filters
 /test/VS/prefix/googletest/INSTALL.vcxproj.filters
 /test/VS/prefix/INSTALL.vcxproj.filters
 /test/VS/ZERO_CHECK.vcxproj.filters
@@ -61,12 +57,8 @@ CMakeFiles
 /test/VS/INSTALL.vcxproj
 /test/VS/prefix/ALL_BUILD.vcxproj
 /test/VS/prefix/googlemock/ALL_BUILD.vcxproj
-/test/VS/prefix/googlemock/gmock.vcxproj
-/test/VS/prefix/googlemock/gmock_main.vcxproj
 /test/VS/prefix/googlemock/INSTALL.vcxproj
 /test/VS/prefix/googletest/ALL_BUILD.vcxproj
-/test/VS/prefix/googletest/gtest.vcxproj
-/test/VS/prefix/googletest/gtest_main.vcxproj
 /test/VS/prefix/googletest/INSTALL.vcxproj
 /test/VS/prefix/INSTALL.vcxproj
 /test/VS/ZERO_CHECK.vcxproj
