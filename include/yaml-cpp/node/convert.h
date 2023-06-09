@@ -163,7 +163,7 @@ ConvertStreamTo(std::stringstream& stream, T& rhs) {
       }                                                                    \
       const std::string& input = node.Scalar();                            \
       std::stringstream stream(input);                                     \
-      stream.unsetf(std::ios::dec);                                        \
+      stream.unsetf(std::ios_base::dec);                                        \
       if ((stream.peek() == '-') && std::is_unsigned<type>::value) {       \
         return false;                                                      \
       }                                                                    \

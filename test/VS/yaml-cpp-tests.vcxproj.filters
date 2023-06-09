@@ -57,4 +57,9 @@
       <Filter>%2a%2a Resource Files</Filter>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Build\Runs\Monster.yaml">
+      <Filter>%2a%2a Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

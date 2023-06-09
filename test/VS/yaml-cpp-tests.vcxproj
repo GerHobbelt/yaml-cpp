@@ -203,6 +203,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Name>gmock</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Build\Runs\Monster.yaml" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
