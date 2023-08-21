@@ -94,6 +94,10 @@ void Emitter::RestoreGlobalModifiedSettings() {
   m_pState->RestoreGlobalModifiedSettings();
 }
 
+void Emitter::SetStringLiteralPrefix(std::string prefix) {
+  m_string_literal_prefix = prefix;
+}
+
 // SetLocalValue
 // . Either start/end a group, or set a modifier locally
 Emitter& Emitter::SetLocalValue(EMITTER_MANIP value) {
@@ -742,7 +746,9 @@ Emitter& Emitter::Write(const std::string& str) {
       break;
     case StringFormat::Literal:
       Utils::WriteLiteralString(m_stream, str,
-                                m_pState->CurIndent() + m_pState->GetIndent());
+                                m_pState->CurIndent() + m_pState->GetIndent(),
+                                m_string_literal_prefix);
+      SetStringLiteralPrefix("|\n");
       break;
   }
 

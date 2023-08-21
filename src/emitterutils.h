@@ -38,7 +38,8 @@ bool WriteSingleQuotedString(ostream_wrapper& out, const std::string& str);
 bool WriteDoubleQuotedString(ostream_wrapper& out, const std::string& str,
                              StringEscaping::value stringEscaping);
 bool WriteLiteralString(ostream_wrapper& out, const std::string& str,
-                        std::size_t indent);
+                        std::size_t indent,
+                        const std::string& string_literal_prefix);
 bool WriteChar(ostream_wrapper& out, char ch,
                StringEscaping::value stringEscapingStyle);
 bool WriteComment(ostream_wrapper& out, const std::string& str,

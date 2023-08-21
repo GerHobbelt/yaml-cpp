@@ -60,6 +60,7 @@ class YAML_CPP_API Emitter {
   bool SetFloatPrecision(std::size_t n);
   bool SetDoublePrecision(std::size_t n);
   void RestoreGlobalModifiedSettings();
+  void SetStringLiteralPrefix(std::string prefix);
 
   // local setters
   Emitter& SetLocalValue(EMITTER_MANIP value);
@@ -131,6 +132,7 @@ class YAML_CPP_API Emitter {
  private:
   std::unique_ptr<EmitterState> m_pState;
   ostream_wrapper m_stream;
+  std::string m_string_literal_prefix = "|\n";
 };
 
 template <typename T>
