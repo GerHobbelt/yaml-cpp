@@ -27,6 +27,7 @@ option(YAML_BUILD_SHARED_LIBS "Build yaml-cpp shared library" ${BUILD_SHARED_LIB
 option(YAML_CPP_INSTALL "Enable generation of yaml-cpp install targets" ${YAML_CPP_MAIN_PROJECT})
 option(YAML_CPP_FORMAT_SOURCE "Format source" ${YAML_CPP_MAIN_PROJECT})
 option(YAML_CPP_DISABLE_UNINSTALL  "Disable uninstallation of yaml-cpp" OFF)
+option(YAML_USE_SYSTEM_GTEST "Use system googletest if found" OFF)
 
 cmake_dependent_option(YAML_CPP_BUILD_TESTS
   "Enable yaml-cpp tests" OFF
@@ -34,7 +35,9 @@ cmake_dependent_option(YAML_CPP_BUILD_TESTS
 cmake_dependent_option(YAML_MSVC_SHARED_RT
   "MSVC: Build yaml-cpp with shared runtime libs (/MD)" ON
   "CMAKE_SYSTEM_NAME MATCHES Windows" OFF)
-
+set(YAML_CPP_INSTALL_CMAKEDIR "${CMAKE_INSTALL_LIBDIR}/cmake/yaml-cpp"
+  CACHE STRING "Path to install the CMake package to")
+ 
 if (YAML_CPP_FORMAT_SOURCE)
     find_program(YAML_CPP_CLANG_FORMAT_EXE NAMES clang-format)
 endif()
@@ -146,13 +149,12 @@ set_target_properties(yaml-cpp PROPERTIES
   PROJECT_LABEL "yaml-cpp ${yaml-cpp-label-postfix}"
   DEBUG_POSTFIX "${CMAKE_DEBUG_POSTFIX}")
 
-set(CONFIG_EXPORT_DIR "${CMAKE_INSTALL_LIBDIR}/cmake/yaml-cpp")
-set(EXPORT_TARGETS yaml-cpp)
+set(EXPORT_TARGETS yaml-cpp::yaml-cpp)
 configure_package_config_file(
   "${PROJECT_SOURCE_DIR}/yaml-cpp-config.cmake.in"
   "${PROJECT_BINARY_DIR}/yaml-cpp-config.cmake"
-  INSTALL_DESTINATION "${CONFIG_EXPORT_DIR}"
-  PATH_VARS CMAKE_INSTALL_INCLUDEDIR CMAKE_INSTALL_LIBDIR CONFIG_EXPORT_DIR YAML_BUILD_SHARED_LIBS)
+  INSTALL_DESTINATION "${YAML_CPP_INSTALL_CMAKEDIR}"
+  PATH_VARS CMAKE_INSTALL_INCLUDEDIR CMAKE_INSTALL_LIBDIR)
 unset(EXPORT_TARGETS)
 
 write_basic_package_version_file(
@@ -172,15 +174,14 @@ if (YAML_CPP_INSTALL)
                 FILES_MATCHING PATTERN "*.h")
   install(EXPORT yaml-cpp-targets
     NAMESPACE yaml-cpp::
-    DESTINATION "${CONFIG_EXPORT_DIR}")
+    DESTINATION "${YAML_CPP_INSTALL_CMAKEDIR}")
   install(FILES
       "${PROJECT_BINARY_DIR}/yaml-cpp-config.cmake"
       "${PROJECT_BINARY_DIR}/yaml-cpp-config-version.cmake"
-    DESTINATION "${CONFIG_EXPORT_DIR}")
+    DESTINATION "${YAML_CPP_INSTALL_CMAKEDIR}")
   install(FILES "${PROJECT_BINARY_DIR}/yaml-cpp.pc"
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
 endif()
-unset(CONFIG_EXPORT_DIR)
 
 if(YAML_CPP_BUILD_TESTS)
   add_subdirectory(test)
