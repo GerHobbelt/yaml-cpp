@@ -7,7 +7,7 @@ if(POLICY CMP0091)
   cmake_policy(SET CMP0091 NEW)
 endif()
 
-project(YAML_CPP VERSION 0.7.0 LANGUAGES CXX)
+project(YAML_CPP VERSION 0.8.0 LANGUAGES CXX)
 
 set(YAML_CPP_MAIN_PROJECT OFF)
 if(CMAKE_SOURCE_DIR STREQUAL PROJECT_SOURCE_DIR)
@@ -18,6 +18,7 @@ include(CMakePackageConfigHelpers)
 include(CMakeDependentOption)
 include(CheckCXXCompilerFlag)
 include(GNUInstallDirs)
+include(CTest)
 
 option(YAML_CPP_BUILD_CONTRIB "Enable yaml-cpp contrib in library" ON)
 option(YAML_CPP_BUILD_TOOLS "Enable parse tools" ON)
@@ -167,6 +168,7 @@ if (YAML_CPP_INSTALL)
     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
                 FILES_MATCHING PATTERN "*.h")
   install(EXPORT yaml-cpp-targets
+    NAMESPACE yaml-cpp::
     DESTINATION "${CONFIG_EXPORT_DIR}")
   install(FILES
       "${PROJECT_BINARY_DIR}/yaml-cpp-config.cmake"
@@ -178,7 +180,6 @@ endif()
 unset(CONFIG_EXPORT_DIR)
 
 if(YAML_CPP_BUILD_TESTS)
-  include(CTest)
   add_subdirectory(test)
 endif()
 
