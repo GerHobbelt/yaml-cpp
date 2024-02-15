@@ -7,6 +7,8 @@
 // Definition yaml_cpp_EXPORTS using to building YAML-CPP as dll/so library
 // (definition created by CMake or defined manually)
 
+#pragma warning(disable : 4251 4275)
+
 #ifdef YAML_CPP_STATIC_DEFINE
 #  define YAML_CPP_API
 #  define YAML_CPP_NO_EXPORT
