@@ -1,6 +1,8 @@
 #include "yaml-cpp/exceptions.h"
 #include "yaml-cpp/noexcept.h"
 
+#pragma warning(disable : 4273)
+
 namespace YAML {
 
 // These destructors are defined out-of-line so the vtable is only emitted once.
