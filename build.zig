@@ -29,19 +29,11 @@ const Allocator = std.mem.Allocator;
     const cpp_src = try list_cpp_src(alloc, "src/");
     yaml_cpp.addCSourceFiles(cpp_src.items, cpp_flags);
 
-    // Create header library
-    const yaml_hpp = b.addStaticLibrary(.{
-        .name = "yaml-hpp-fortrajectum",
-        .root_source_file = b.addWriteFiles().add("empty.c", ""),
-        .target = target,
-        .optimize = optimize
-    });
-    //Empty c file to satisfy compiler
-    yaml_hpp.installHeadersDirectory("include/", "yaml-cpp/");
+    // Add headers to install directory
+    yaml_cpp.installHeadersDirectory("include/", "");
 
-    // Install compiled object & the headers
+    // Install headers + binary
     b.installArtifact(yaml_cpp);
-    b.installArtifact(yaml_hpp);
 }
 
 
