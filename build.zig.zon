@@ -1,4 +1,4 @@
 .{
-	.name = "yaml-cpp",
+	.name = "yaml-cpp-fortrajectum",
 	.version = "0.8.0"
 }
