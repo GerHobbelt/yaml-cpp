@@ -7,6 +7,8 @@ const Allocator = std.mem.Allocator;
     defer arena_state.deinit();
     const alloc = arena_state.allocator();
 
+    const root_dir = b.build_root.handle;
+
     // Get user-supplied target and optimize functions
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
@@ -22,34 +24,30 @@ const Allocator = std.mem.Allocator;
     yaml_cpp.linkLibCpp();
 
     // Include headers
-    yaml_cpp.addIncludePath(.{ .path = "include/" });
+    yaml_cpp.addIncludePath(.{ .path = "include" });
 
     // Add source files
     const cpp_flags = &.{"-std=c++11"};
-    const cpp_src = try list_cpp_src(alloc, "src/");
+    const cpp_src = try list_cpp_src(alloc, try root_dir.openDir("src", .{}));
     yaml_cpp.addCSourceFiles(cpp_src.items, cpp_flags);
 
     // Add headers to install directory
-    yaml_cpp.installHeadersDirectory("include/", "");
+    yaml_cpp.installHeadersDirectory("include", "");
 
     // Install headers + binary
     b.installArtifact(yaml_cpp);
 }
 
-
 /// This function traverses the `src_dir` and produces an `ArrayList` of all
 /// non-main source files in the `src_dir`.
-fn list_cpp_src(alloc: Allocator, src_dir: []const u8) !std.ArrayList([]u8) {
+fn list_cpp_src(alloc: Allocator, src_dir: std.fs.Dir) !std.ArrayList([]u8) {
     var source_files = std.ArrayList([]u8).init(alloc);
-    var walker = (try std.fs.cwd().openIterableDir(src_dir, .{})).iterate();
+    var walker = (try src_dir.openIterableDir(".", .{})).iterate();
     while (try walker.next()) |entry| {
         if (!std.mem.endsWith(u8, entry.name, ".cpp")) {
             continue;
         }
-        var source_path = std.ArrayList(u8).init(alloc);
-        try source_path.appendSlice(src_dir);
-        try source_path.appendSlice(entry.name);
-        try source_files.append(try source_path.toOwnedSlice());
+        try source_files.append(try src_dir.realpathAlloc(alloc, entry.name));
     }
     return source_files;
 }
