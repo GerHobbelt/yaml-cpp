@@ -1,4 +1,10 @@
 .{
 	.name = "yaml-cpp",
-	.version = "0.8.0"
+	.version = "0.8.0",
+	.paths = .{
+		"src",
+		"include",
+		"build.zig",
+		"build.zig.zon"
+	}
 }
