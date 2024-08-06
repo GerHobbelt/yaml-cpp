@@ -3,3 +3,4 @@ build/
 /bazel-*
 zig-out/
 zig-cache/
+.zig-cache/
