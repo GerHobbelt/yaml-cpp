@@ -28,7 +28,7 @@
 #include "yaml-cpp/node/node.h"
 #include "yaml-cpp/node/type.h"
 #include "yaml-cpp/null.h"
-#include "yaml-cpp/fp_to_string.h"
+#include "yaml-cpp/fptostring.h"
 
 
 namespace YAML {
@@ -130,7 +130,7 @@ inner_encode(const T& rhs, std::stringstream& stream){
       stream << ".inf";
     }
   } else {
-    stream << fp_to_string(rhs, stream.precision());
+    stream << FpToString(rhs, stream.precision());
   }
 }
 
