@@ -191,6 +191,14 @@ TEST(NodeTest, MapElementRemoval) {
   EXPECT_TRUE(!node["foo"]);
 }
 
+TEST(NodeTest, MissingKey) {
+  Node node;
+  node["foo"] = "value";
+  EXPECT_TRUE(!node["bar"]);
+  EXPECT_EQ(NodeType::Undefined, node["bar"].Type());
+  EXPECT_THROW(node["bar"].as<std::string>(), InvalidNode);
+}
+
 TEST(NodeTest, MapIntegerElementRemoval) {
   Node node;
   node[1] = "hello";
@@ -849,5 +857,17 @@ TEST_F(NodeEmitterTest, NestFlowMapListNode) {
 
   ExpectOutput("{position: [1.5, 2.25, 3.125]}", mapNode);
 }
+
+TEST_F(NodeEmitterTest, RobustAgainstLocale) {
+  std::locale::global(std::locale(""));
+  Node node;
+  node.push_back(1.5);
+  node.push_back(2.25);
+  node.push_back(3.125);
+  node.push_back(123456789);
+
+  ExpectOutput("- 1.5\n- 2.25\n- 3.125\n- 123456789", node);
+}
+
 }
 }
