@@ -139,10 +139,10 @@ class YAML_CPP_API Node {
 
 YAML_CPP_API bool operator==(const Node& lhs, const Node& rhs);
 
-YAML_CPP_API Node Clone(const Node& node);
+YAML_CPP_API Node Clone(const Node& node, bool preserve_aliases = true);
 
 template <typename T>
 struct convert;
-}
+}  // namespace YAML
 
 #endif  // NODE_NODE_H_62B23520_7C8E_11DE_8A39_0800200C9A66

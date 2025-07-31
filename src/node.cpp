@@ -3,10 +3,10 @@
 #include "nodeevents.h"
 
 namespace YAML {
-Node Clone(const Node& node) {
+Node Clone(const Node& node, bool preserve_aliases) {
   NodeEvents events(node);
   NodeBuilder builder;
-  events.Emit(builder);
+  events.Emit(builder, preserve_aliases);
   return builder.Root();
 }
 }  // namespace YAML

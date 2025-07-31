@@ -7,7 +7,7 @@ namespace YAML {
 Emitter& operator<<(Emitter& out, const Node& node) {
   EmitFromEvents emitFromEvents(out);
   NodeEvents events(node);
-  events.Emit(emitFromEvents);
+  events.Emit(emitFromEvents, true);
   return out;
 }
 

@@ -42,19 +42,19 @@ void NodeEvents::Setup(const detail::node& node) {
   }
 }
 
-void NodeEvents::Emit(EventHandler& handler) {
+void NodeEvents::Emit(EventHandler& handler, bool preserve_aliases) {
   AliasManager am;
 
   handler.OnDocumentStart(Mark());
   if (m_root)
-    Emit(*m_root, handler, am);
+    Emit(*m_root, handler, am, preserve_aliases);
   handler.OnDocumentEnd();
 }
 
 void NodeEvents::Emit(const detail::node& node, EventHandler& handler,
-                      AliasManager& am) const {
+                      AliasManager& am, bool preserve_aliases) const {
   anchor_t anchor = NullAnchor;
-  if (IsAliased(node)) {
+  if (preserve_aliases && IsAliased(node)) {
     anchor = am.LookupAnchor(node);
     if (anchor) {
       handler.OnAlias(Mark(), anchor);
@@ -77,14 +77,14 @@ void NodeEvents::Emit(const detail::node& node, EventHandler& handler,
     case NodeType::Sequence:
       handler.OnSequenceStart(Mark(), node.tag(), anchor, node.style());
       for (auto element : node)
-        Emit(*element, handler, am);
+        Emit(*element, handler, am, preserve_aliases);
       handler.OnSequenceEnd();
       break;
     case NodeType::Map:
       handler.OnMapStart(Mark(), node.tag(), anchor, node.style());
       for (auto element : node) {
-        Emit(*element.first, handler, am);
-        Emit(*element.second, handler, am);
+        Emit(*element.first, handler, am, preserve_aliases);
+        Emit(*element.second, handler, am, preserve_aliases);
       }
       handler.OnMapEnd();
       break;
