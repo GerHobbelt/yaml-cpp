@@ -224,6 +224,57 @@ TEST(LoadNodeTest, DereferenceIteratorError) {
   EXPECT_THROW(node.begin()->begin()->Type(), InvalidNode);
 }
 
+#ifdef YAML_CPP_SUPPORT_MERGE_KEYS
+TEST(NodeTest, MergeKeyScalarSupport) {
+  Node node = Load("{<<: {a: 1}}");
+  ASSERT_FALSE(!node["a"]);
+  EXPECT_EQ(1, node["a"].as<int>());
+}
+
+TEST(NodeTest, MergeKeyExistingKey) {
+  Node node = Load("{a: 1, <<: {a: 2}}");
+  ASSERT_FALSE(!node["a"]);
+  EXPECT_EQ(1, node["a"].as<int>());
+}
+
+TEST(NodeTest, MergeKeySequenceSupport) {
+  Node node = Load("<<: [{a: 1}, {a: 2, b: 3}]");
+  ASSERT_FALSE(!node["a"]);
+  ASSERT_FALSE(!node["b"]);
+  EXPECT_EQ(1, node["a"].as<int>());
+  EXPECT_EQ(3, node["b"].as<int>());
+}
+
+TEST(NodeTest, NestedMergeKeys) {
+  Node node = Load("{<<: {<<: {a: 1}}}");
+  ASSERT_FALSE(!node["a"]);
+  EXPECT_EQ(1, node["a"].as<int>());
+}
+
+TEST(NodeTest, AnchorAndMergeKey) {
+  Node node = YAML::Load(R"(
+    a_root: &root_anchor
+      key1: value1
+      key2: value2
+    b_child:
+      <<: *root_anchor
+      key2: value2_override
+  )");
+
+  ASSERT_FALSE(!node["a_root"]);
+  ASSERT_FALSE(!node["b_child"]);
+  EXPECT_EQ("value1", node["a_root"]["key1"].as<std::string>());
+  EXPECT_EQ("value2", node["a_root"]["key2"].as<std::string>());
+  EXPECT_EQ("value1", node["b_child"]["key1"].as<std::string>());
+  EXPECT_EQ("value2_override", node["b_child"]["key2"].as<std::string>());
+}
+#else
+TEST(NodeTest, MergeKeySupport) {
+  Node node = Load("{<<: {a: 1}}");
+  ASSERT_FALSE(node["a"]);
+}
+#endif
+
 TEST(NodeTest, EmitEmptyNode) {
   Node node;
   Emitter emitter;

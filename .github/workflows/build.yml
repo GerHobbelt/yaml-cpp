@@ -1,7 +1,7 @@
 name: Github PR
 on:
   push:
-    branches: [ master ]
+    branches: [ master, merge-key-support ]
   pull_request:
     branches: [ master ]
   workflow_dispatch:
@@ -40,7 +40,7 @@ jobs:
           ${{format(matrix.generator != 'Default Generator' && '-G "{0}"' || '', matrix.generator)}}
         CMAKE_INSTALL_PREFIX: "${{ github.workspace }}/install-prefix"
         CMAKE_BUILD_TYPE: Debug
-        CMAKE_CXX_FLAGS_DEBUG: ${{ matrix.googletest == 'build' && '-g -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC' || '-g' }} 
+        CMAKE_CXX_FLAGS_DEBUG: ${{ matrix.googletest == 'build' && '-g -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC' || '-g' }}
       runs-on: ${{ matrix.os }}
       steps:
 
@@ -64,7 +64,8 @@ jobs:
               -D CMAKE_CXX_FLAGS_DEBUG="${{ env.CMAKE_CXX_FLAGS_DEBUG }}" \
               -D YAML_BUILD_SHARED_LIBS=${{ env.YAML_BUILD_SHARED_LIBS }} \
               -D YAML_USE_SYSTEM_GTEST=${{ env.YAML_USE_SYSTEM_GTEST }} \
-              -D YAML_CPP_BUILD_TESTS=ON
+              -D YAML_CPP_BUILD_TESTS=ON \
+              -DYAML_CPP_SUPPORT_MERGE_KEYS=ON
 
         - name: Build
           run: |

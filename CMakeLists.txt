@@ -29,6 +29,7 @@ option(YAML_CPP_FORMAT_SOURCE "Format source" ${YAML_CPP_MAIN_PROJECT})
 option(YAML_CPP_DISABLE_UNINSTALL  "Disable uninstallation of yaml-cpp" OFF)
 option(YAML_USE_SYSTEM_GTEST "Use system googletest if found" OFF)
 option(YAML_ENABLE_PIC "Use Position-Independent Code " ON)
+option(YAML_CPP_SUPPORT_MERGE_KEYS "Support YAML merge keys ('<<') in yaml-cpp's executable targets. Use '#define YAML_CPP_SUPPORT_MERGE_KEYS' instead when linking from another project." OFF)
 
 cmake_dependent_option(YAML_CPP_BUILD_TESTS
   "Enable yaml-cpp tests" OFF
@@ -38,7 +39,7 @@ cmake_dependent_option(YAML_MSVC_SHARED_RT
   "CMAKE_SYSTEM_NAME MATCHES Windows" OFF)
 set(YAML_CPP_INSTALL_CMAKEDIR "${CMAKE_INSTALL_LIBDIR}/cmake/yaml-cpp"
   CACHE STRING "Path to install the CMake package to")
- 
+
 if (YAML_CPP_FORMAT_SOURCE)
     find_program(YAML_CPP_CLANG_FORMAT_EXE NAMES clang-format)
 endif()
@@ -133,7 +134,8 @@ target_compile_definitions(yaml-cpp
     $<$<NOT:$<BOOL:${YAML_BUILD_SHARED_LIBS}>>:YAML_CPP_STATIC_DEFINE>
   PRIVATE
     $<${build-windows-dll}:${PROJECT_NAME}_DLL>
-    $<$<NOT:$<BOOL:${YAML_CPP_BUILD_CONTRIB}>>:YAML_CPP_NO_CONTRIB>)
+    $<$<NOT:$<BOOL:${YAML_CPP_BUILD_CONTRIB}>>:YAML_CPP_NO_CONTRIB>
+    $<$<BOOL:${YAML_CPP_SUPPORT_MERGE_KEYS}>:YAML_CPP_SUPPORT_MERGE_KEYS>)
 
 target_sources(yaml-cpp
   PRIVATE
